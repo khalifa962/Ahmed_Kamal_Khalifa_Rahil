@@ -1,0 +1,167 @@
+.cart-item {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-top: 30px;
+  border-bottom: 1px solid #ccc;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.cart-item h2 {
+  margin: 0 0 0.5rem 0;
+  color: #363636;
+  font-size: 20px;
+}
+.cart-item h3{
+  color:#646;
+  font-weight: 200;
+}
+.summary {
+  margin-top: 40px;
+  display: flex;
+  width:55%;
+  flex-direction: column;
+}
+
+.price {
+  font-weight: bold;
+  color: #8a2b06;
+  margin-top: 20px;
+}
+
+.amount {
+  margin-left: 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width:10%;
+}
+.image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+.image img{
+  width: 100%
+}
+@media (min-width: 768px) {
+  .actions {
+    flex-direction: column;
+  }
+}
+
+.cart-item button {
+  display: block;
+  font: inherit;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #8a2b06;
+  border: 1px solid #8a2b06;
+  width: 2.4rem;
+  height: 2.4rem;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cart-item button:hover,
+.cart-item button:active {
+  background-color: #8a2b06;
+  color: white;
+}
+.total,.quantity{
+  margin: 20px;
+  margin-left: 120px;
+}
+.total{
+  font-weight: 600;
+}
+.button{
+  width: 200px;
+  outline: none;
+  border:0;
+  font-size: 20px;
+  padding: 10px;
+  margin: 20px;
+  margin-left: 120px;
+  background-color: rgb(0, 170, 10);
+  cursor: pointer;
+}
+.button:hover{
+  background-color: rgb(200, 200, 10);
+  box-shadow: 0 0 10px 1px #0F0;
+}
+.arrows {
+  display: flex;
+  position: absolute;
+  bottom: 2rem;
+  right: 50px;
+  gap: .7rem;
+  padding: 10px;
+}
+.arrows > img {
+  background-color:rgba(0, 0, 0, 0.7);
+  width: 1.5rem;
+  cursor: pointer;
+}
+.arrows > img:nth-child(1):hover {
+  background-color: #111;
+}
+.arrows > img:nth-child(2):hover {
+  background-color: #111;
+}
+
+.attributes{
+   margin-top: 20px;
+}
+.attributes h4{
+  margin-bottom: 10px;
+}
+.itemClass{
+  background-color: #fff;
+  display: inline-block;
+  width: 40px;
+  min-width: fit-content;
+  height: 40px;
+  margin-right: 20px;
+  text-align: center;
+  line-height: 40px;
+  outline: 2px solid #000;
+  color:#111;
+  margin-bottom: 20px;
+  cursor: pointer !important;
+
+}
+.active{
+  box-shadow: 0 0 10px 2px #eee !important;
+  color: #fff !important;
+  background-color: #111 !important;
+}
+.colorCont{
+   display:inline-block;
+   width:40px;
+   height:40px;
+   margin-right:10px;
+   margin-bottom: 20px;
+   outline: 2px solid #000;
+}
+.colorSelected
+,.colorCont:hover{
+  display:inline-block;
+  width:40px;
+  height:40px;
+  margin-right:10px;
+  margin-bottom: 20px;
+  outline: 2px solid #000;
+  /* box-shadow: 0 0 2px 1px #111 !important; */
+  cursor: pointer !important;
+  scale:1.1 !important;
+  border: 3px solid #eee !important;
+  outline: 3px solid #000 !important;
+}

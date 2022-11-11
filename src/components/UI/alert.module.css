@@ -1,0 +1,78 @@
+.alertBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20000;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.alertModal p{
+  font-size: 19px;
+  letter-spacing: 2px;
+  line-height: 1.7;
+  font-weight: bold;
+  color: #900;
+  text-align: center;
+}
+.alertModal button{
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 14px;
+  display: block;
+  background-color: #900;
+  color: #fff;
+  font-weight: bold;
+  outline: none;
+  border:0;
+  font-size: 20px;
+  width:10rem;
+}
+.alertModal button:hover{
+  background-color: #c00;
+  color: #fff;
+  border: 2px solid #100;
+  font-weight: bolder;
+  cursor: pointer;
+  }
+.alertModal div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.alertModal {
+  max-height: 28rem;
+  position: fixed;
+  top: 50%;
+  left: 50% !important;
+  transform: translate(-50%, -50%) ;
+  background-color: rgba(250, 250, 255, 1);
+  padding: 1.3rem;
+  border-radius: 14px;
+  box-shadow: 0 0 3px 1px rgba(250, 250, 250, 0.45);
+  z-index: 300000;
+  max-width: 600px;
+  overflow-y: auto;
+  animation: go-down 300ms ease-out forwards;
+}
+
+@media (min-width: 768px) {
+  .alertModal {
+    width: 80%;
+  }
+}
+
+@keyframes go-down {
+  0% {
+    opacity: 0;
+    top:-100%;
+  }
+  50% {
+    opacity: 1;
+    top:200%;
+  }
+  100% {
+    opacity: 1;
+    top:50%;
+  }
+}

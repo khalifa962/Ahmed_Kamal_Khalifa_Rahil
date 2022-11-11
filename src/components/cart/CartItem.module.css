@@ -1,0 +1,148 @@
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  max-height: 26rem;
+  margin-top: 10px;
+  position: relative;
+  /* overflow-y: auto; */
+}
+
+
+.cart-item h2 {
+  margin: 0 0 0.5rem 0;
+  color: #363636;
+  font-size: 18px;
+}
+.cart-item h3{
+  color:#646;
+  font-size: 16px;
+  font-weight: 200;
+}
+.summary {
+  width: 30%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.price {
+  font-weight: bold;
+  color: #8a2b06;
+  margin-top: 10px;
+}
+
+.amount {
+  margin-left: 10px;
+}
+
+.actions {
+  width: 8%;
+  margin-right: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  width: 40%;
+}
+.image img{
+  width: 100%
+}
+@media (min-width: 768px) {
+  .actions {
+    flex-direction: column;
+  }
+}
+
+.cart-item button {
+  display: block;
+  font: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #8a2b06;
+  border: 1px solid #8a2b06;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cart-item button:hover,
+.cart-item button:active {
+  background-color: #8a2b06;
+  color: white;
+}
+.arrows {
+  display: flex;
+
+  position: absolute;
+  bottom: 1rem;
+  right: 10px;
+  gap: .7rem;
+}
+.arrows > img {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 1.1rem;
+  cursor: pointer;
+}
+.arrows > img:nth-child(1):hover {
+  background-color: #111;
+}
+.arrows > img:nth-child(2):hover {
+  background-color: #111;
+}
+
+.attributes{
+margin-top: 10px;
+
+}
+.attributes h4{
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.itemClass{
+  background-color: #fff;
+  display: inline-block;
+  width: 20px;
+  min-width: fit-content;
+  height: 20px;
+  margin-right: 2px;
+  text-align: center;
+  line-height: 20px;
+  border: 1px solid #000;
+  color:#111;
+  font-size: 12px;
+  margin-bottom: 10px;
+
+}
+.active{
+  box-shadow: 0 0 10px 2px #eee ;
+  color: #fff ;
+  background-color: #111 ;
+  cursor: pointer ;
+}
+.colorCont{
+   display:inline-block;
+   width:20px;
+   height:20px;
+   margin-right:10px;
+   margin-bottom: 10px;
+   outline: 1px solid #000;
+}
+.colorSelected{
+  display:inline-block;
+  width:20px;
+  height:20px;
+  margin-right:10px;
+  margin-bottom: 10px;
+  outline: 1px solid #000;
+  cursor: pointer;
+  scale:1.1 ;
+  border: 1px solid #eee ;
+  outline: 1px solid #000 ;
+}
