@@ -1,3 +1,10 @@
+#Note: the project cannot be working porperly 
+without the endpoint so you can 
+contact me for any info you want to 
+know about the project endpoint or to see
+It live.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
